@@ -13,7 +13,7 @@ pkg_install_all() {
 }
 
 pkg_install_pip() {
-  python3 -m pip install --user virtualenv pylint black yapf
+  python3 -m pip install --user virtualenv pylint black yapf mkdocs mkdocs-material
 }
 
 pkg_install_npm() {
@@ -45,11 +45,10 @@ pkg_install_git_hugo() {
   go install
 }
 
-## Packages installed from shell scripts
+## Packages installed with shell scripts
 ## (curl output piped into shell)
 
 pkg_install_curl_rust() {
   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 }
-
 
