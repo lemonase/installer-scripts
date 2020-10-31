@@ -1,2 +1,3 @@
 # installer-scripts
-Files and scripts to install packages on development machines.
+
+Files and scripts to install various packages on development machines.
